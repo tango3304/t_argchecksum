@@ -3,7 +3,6 @@ from sys import version_info, exit, exc_info
 from traceback import print_tb, format_exception_only
 
 class MyCheckSum:
-
 	def __init__(self, *arg):
 		self.args = arg
 
