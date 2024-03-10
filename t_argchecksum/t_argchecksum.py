@@ -23,9 +23,9 @@ class MyCheckSum:
 				print(f'\n\nProcess Interrupted [処理を中断しました]')
 				exit(1)
 			except:
-				exc_type, exc_message, exc_object	= exc_info()
-				exc_list							= format_exception_only(exc_type, exc_message)
-				error_message						= ''.join(exc_message for exc_message in exc_list)
+				exc_type, exc_message, exc_object　= exc_info()
+				exc_list　　　　　　　　　　　　　　　　= format_exception_only(exc_type, exc_message)
+				error_message　　　　　　　　　　　　　= ''.join(exc_message for exc_message in exc_list)
 				print_tb(exc_object)
 				print(f'  {error_message}')
 				exit(1)
